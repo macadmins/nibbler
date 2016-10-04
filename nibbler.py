@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # demo video here: 
 # https://www.dropbox.com/s/k0bpekd13muknmz/nibbler%20-%20by%20frogor.mp4?dl=0
 
