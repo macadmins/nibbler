@@ -19,7 +19,6 @@ MapKit = objc.loadBundle(
 
 VALID_PASSWORD = False
 PASSWORD = ''
-TAG = 'logging-tag'
 global showed_up_once
 showed_up_once = False
 global IamQuitting
@@ -121,9 +120,8 @@ def output(message):
 
 
 def die(message):
-  """File a task and exit the script."""
+  """Log a message and exit the script."""
   logging.critical(str(message))
-  # Launch ProvisioningTool
   exit(1)
 
 
