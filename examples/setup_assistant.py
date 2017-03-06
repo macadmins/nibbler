@@ -1,5 +1,5 @@
 #!/usr/bin/python
-"""Nibbler."""
+"""Setup assistant showing how to automate tasks based on timing."""
 
 from nibbler import *
 
@@ -10,12 +10,6 @@ from OpenDirectory import *
 import argparse
 import logging
 import os
-
-# black magic
-MapKit = objc.loadBundle(
-  'MapKit',
-  globals(), bundle_path='/System/Library/Frameworks/MapKit.framework'
-)
 
 VALID_PASSWORD = False
 PASSWORD = ''
