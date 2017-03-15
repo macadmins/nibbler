@@ -21,6 +21,8 @@ global on_run_trigger
 on_run_trigger = False
 
 try:
+  # Because of how this loads, this should be an absolute path if you don't
+  # want to run this from the same directory as the script
   n = Nibbler('setup_assistant.nib')
 except IOError:
   print "Unable to load nib!"
