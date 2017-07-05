@@ -33,7 +33,7 @@ Once the requirements above are meet we're able to create our dialog.
 
 ## Tips
 
-* Make sure and give all of your UI elements in Xcode a static identifier. Xcode by default sets identifiers to `Automatic` however that does work with nibbler.
+* Make sure and give all of your UI elements in Xcode a static identifier. Xcode by default sets identifiers to `Automatic` however that does not work with nibbler.
 * Printing your content handles is very helpful: `print n.nib_contents`
 * Printing your views can also help with troubleshooting: `print n.views`
 * Consult Apple's [macOS Human Interface Guidelines](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/index.html#//apple_ref/doc/uid/20000957) for the authoritative source on the correct usage of UI elements.
