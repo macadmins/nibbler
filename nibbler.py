@@ -27,7 +27,8 @@
 # Use the "Identifier" property of your control in Interface Builder and give your controls a name
 # Then use the 'attach' method on your Nibbler to link the control to a python function
 
-from AppKit import NSNib, NSApp, NSObject, NSLog, NSApplication, NSBundle
+from Foundation import NSObject, NSBundle
+from AppKit import NSNib, NSApp, NSApplication
 import objc, os.path, types
 
 from ctypes import CDLL, Structure, POINTER, c_uint32, byref
