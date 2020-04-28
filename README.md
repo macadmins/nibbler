@@ -8,7 +8,7 @@ The best way to play with nibbler is to download this git repo and play with the
 1. Download this repo:
 
     ```bash
-    git clone https://github.com/pudquick/nibbler.git
+    git clone https://github.com/macadmins/nibbler.git
     cd nibbler/examples
     ```
 
