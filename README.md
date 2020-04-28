@@ -37,4 +37,4 @@ Once the requirements above are meet we're able to create our dialog.
 * Printing your content handles is very helpful: `print n.nib_contents`
 * Printing your views can also help with troubleshooting: `print n.views`
 * Consult Apple's [macOS Human Interface Guidelines](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/OSXHIGuidelines/index.html#//apple_ref/doc/uid/20000957) for the authoritative source on the correct usage of UI elements.
-* Consult Apple's [Start Developing iOS Apps (Swift):Build a Basic UI](https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/Lesson2.html#//apple_ref/doc/uid/TP40015214-CH5-SW1) for a tutorial on building a UI in Xcode.
+* Consult Apple's [Start Developing iOS Apps (Swift):Build a Basic UI](https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/BuildABasicUI.html) for a tutorial on building a UI in Xcode.
