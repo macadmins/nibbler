@@ -1,4 +1,3 @@
-#!/usr/bin/python
 # demo video here: 
 # https://www.dropbox.com/s/k0bpekd13muknmz/nibbler%20-%20by%20frogor.mp4?dl=0
 
@@ -97,7 +96,12 @@ class Nibbler(object):
             path = os.path.join(path, 'keyedobjects.nib')
         with open(path, 'rb') as f:
             # get nib bytes
-            d = buffer(f.read())
+            # try py2 method first
+            try:
+                d = buffer(f.read())
+            # fail to py3
+            except NameError:
+                d = memoryview(f.read())
         n_obj = NSNib.alloc().initWithNibData_bundle_(d, None)
         placeholder_obj = NSObject.alloc().init()
         result, n = n_obj.instantiateWithOwner_topLevelObjects_(placeholder_obj, None)
@@ -111,7 +115,7 @@ class Nibbler(object):
         o = self.views[identifier_label]
         # get the classname of the object and handle appropriately
         o_class = o.className()
-        if o_class == 'NSButton':
+        if o_class in ('NSButton', 'NSTextField', 'NSSecureTextField'):
             # Wow, we actually know how to do this one
             temp = func_to_controller_selector(func)
             # hold onto it
