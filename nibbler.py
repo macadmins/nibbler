@@ -85,6 +85,7 @@ class Nibbler(object):
         info = bundle.localizedInfoDictionary() or bundle.infoDictionary()
         # Did you know you can override parts of infoDictionary (Info.plist, after loading) even though Apple says it's read-only?
         info['LSUIElement'] = '1'
+        info['NSRequiresAquaSystemAppearance'] = False
         # Initialize our shared application instance
         NSApplication.sharedApplication()
         # Two possibilities here
