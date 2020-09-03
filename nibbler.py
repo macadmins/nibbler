@@ -37,7 +37,7 @@ class ProcessSerialNumber(Structure):
                    ('lowLongOfPSN',  c_uint32)]
 kCurrentProcess = 2
 kProcessTransformToForegroundApplication = 1
-kProcessTransformToUIElementAppication   = 4
+kProcessTransformToUIElementApplication   = 4
 ApplicationServices           = CDLL(find_library('ApplicationServices'))
 TransformProcessType          = ApplicationServices.TransformProcessType
 TransformProcessType.argtypes = [POINTER(ProcessSerialNumber), c_uint32]
@@ -127,7 +127,7 @@ class Nibbler(object):
     def run(self):
         if self.hidden:
             psn    = ProcessSerialNumber(0, kCurrentProcess)
-            ApplicationServices.TransformProcessType(psn, kProcessTransformToUIElementAppication)
+            ApplicationServices.TransformProcessType(psn, kProcessTransformToUIElementApplication)
         else:
             psn    = ProcessSerialNumber(0, kCurrentProcess)
             ApplicationServices.TransformProcessType(psn, kProcessTransformToForegroundApplication)
