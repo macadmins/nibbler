@@ -1,5 +1,5 @@
 # nibbler
-Nibbler is a Python PyOjbC utility for displaying dialogs using .nib files.
+Nibbler is officially end of life. Check out the [swiftDialog](https://github.com/bartreardon/swiftDialog) project if you need similar functionality to nibbler.
 
 ## Examples
 
